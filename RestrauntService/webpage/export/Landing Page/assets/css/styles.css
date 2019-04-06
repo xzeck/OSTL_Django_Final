@@ -1,0 +1,157 @@
+#TypeOfFood {
+  text-align:center;
+  padding:40px;
+  /*background-image:url(firwatch.jpg);*/
+  background-size:cover;
+  background-color:rgba(255,255,255,0.75);
+}
+
+div.jumbotron {
+  border-radius:30px;
+  background-color:rgba(255,255,255,0.75);
+}
+
+p.text-center {
+  padding:40px;
+}
+
+button.btn.btn-default {
+  padding:20px;
+  padding-right:40px;
+}
+
+button.btn.btn-default {
+  padding-right:40px;
+}
+
+button.btn.btn-default {
+  margin-right:100px;
+}
+
+button.btn.btn-default {
+  margin-left:100px;
+}
+
+button.btn.btn-default {
+  text-align:center;
+}
+
+div.jumbotron {
+  background-color:#EBCFB2;
+}
+
+button.btn.btn-default {
+  background-color:#C5BAAF;
+}
+
+div.col-md-6 {
+  margin-top:50px;
+}
+
+button.btn.btn-default {
+  text-align:center;
+  font-size:35px;
+}
+
+div.jumbotron {
+  background-color:#C7EFCF;
+}
+
+div.col-md-6 {
+  background-color:#EEF5DB;
+}
+
+button.btn.btn-default {
+  background-color:#FE5F55;
+}
+
+div.jumbotron {
+  padding:100px;
+  margin:20px;
+}
+
+button.btn.btn-default {
+  width:190px;
+  text-align:center;
+  text-justify:inherit;
+}
+
+#background {
+  background-image:url("../../assets/img/background.jpg");
+  width:100%;
+  height:100vh;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-color:rgba(255,255,255,0.11);
+}
+
+#ButtonRow {
+  color:#ffffff;
+  border-radius:30px;
+  padding-top:10px;
+}
+
+#coloumnVeg {
+  padding-bottom:20px;
+  border-radius:30px;
+}
+
+#VegButton {
+  border-radius:25px;
+  background-color:rgba(44,47,68,0.0);
+  text-align:center;
+  padding-left:50px;
+  color:rgb(0,255,179);
+  border-color:rgba(0, 191, 12,0.0);
+  /*border-width:5px;*/
+}
+
+#NonVegButton {
+  border-radius:25px;
+  background-color:rgba(112,112,112,0.0);
+  color:rgba(255,8,92,1.0);
+  border-color:rgba(191, 22, 0,0.0);
+  /*border-width:5px;*/
+  text-align:center;
+  /*align-content:center;*/
+}
+
+#Banner {
+}
+
+#SideBarButton {
+  background-color:rgb(8,2,2);
+  text-align:center;
+  color:rgb(255,255,255);
+  width:78px;
+  height:210px;
+}
+
+#SideBar_Anim {
+  width:1122px;
+}
+
+#SideBarOpenButton {
+  margin-top:500px;
+}
+
+#DivSideBar {
+  margin-left:-100px;
+  padding-left:0px;
+}
+
+#OrderButton {
+  margin-top:54px;
+  margin-left:0px;
+  position:relative;
+  margin-left:40%;
+  margin-right:50%;
+  border-radius:30px;
+  text-align:center;
+  padding-left:36px;
+  background-color:rgba(88,88,88,0.45);
+  border-color:rgba(255,255,255,1);
+  border-width:2px;
+  color:rgba(255,255,255,1);
+}
+

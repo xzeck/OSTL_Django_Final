@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>static/Menu</title>
+    <link rel="stylesheet" href="static/Menu/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/Menu/assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="static/Menu/assets/css/Footer-Clean.css">
+    <link rel="stylesheet" href="static/Menu/assets/css/Parallax-Scroll-Effect.css">
+    <link rel="stylesheet" href="static/Menu/assets/css/styles.css">
+</head>
+
+<body style="background-color:rgb(0,0,0);color:rgb(255,255,255);">
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+
+    <section class="slid-top" style="background-image:url(&quot;static/Menu/assets/img/cusines.jpg&quot;);width:100%;height:100vh;background-repeat:no-repeat;background-position:center;background-size:cover;background-attachment:fixed;min-height:3000px;color:rgb(0,0,0);">
+        <nav class="navbar navbar-light navbar-expand-md fixed-top" style="background-color:#ffffff;">
+            <div class="container-fluid"><a class="navbar-brand" href="#"><strong>3 Seasons&nbsp;Restaurant&nbsp;</strong></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav"></ul>
+            </div>
+            </div>
+        </nav>
+        <div style="background-color:rgba(255,255,255,0.45);color:rgb(0,0,0);padding-bottom:52px;margin-bottom:-55px;">
+            <h1 style="margin-top:0px;padding-top:53px;padding-left:68px;color:#000000;background-color:rgba(255,255,255,0);">Starters</h1>
+        </div>
+        <div class="card-deck" id="Starter">
+            <div class="card"><img class="card-img-top w-100 d-block" src="static/Menu/assets/img/kebabs.jpg">
+                <div class="card-body" id="Kebab">
+                    <h4 class="card-title">Kebabs</h4>
+                    <p class="card-text">Our kebabs are expertly made by our head chef. They are customizable and you have a variety of toppings to choose from.</p><button class="btn btn-primary OrderButton" id="Kebabs" onclick="OrderClick()" type="button">Order</button></div>
+            </div>
+            <div class="card"><img class="card-img-top w-100 d-block" src="static/Menu/assets/img/friendchicken.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">Fried Chicken</h4>
+                    <p class="card-text">We know people like chicken, so we offer the best of the quality chickens to our customer at an affordable rate.</p><button class="btn btn-primary OrderButton" type="button" id="FriedChicken">Order</button></div>
+            </div>
+            <div class="card"><img class="card-img-top w-100 d-block d-flex align-items-center" src="static/Menu/assets/img/cheeseballs.jpg" style="background-size:contain;">
+                <div class="card-body">
+                    <h4 class="card-title">Cheese Balls</h4>
+                    <p class="card-text">What's better than balls? Balls with cheese. Enjoy our best cheese balls.&nbsp;</p><button class="btn btn-primary OrderButton" type="button" id="CheeseBalls" style="margin-top:48px;">Order</button></div>
+            </div>
+        </div>
+        <div style="background-color:rgba(255,255,255,0.45);color:rgb(0,0,0);padding-top:1px;margin-top:18px;margin-bottom:-53px;padding-bottom:59px;">
+            <h1 style="margin-top:0px;padding-top:4px;padding-left:68px;color:rgb(0,0,0);">Main Course</h1>
+        </div>
+        <div class="card-deck" id="MainCourse" style="padding-right:70px;padding-left:70px;">
+            <div class="card"><img class="card-img-top w-100 d-block" src="static/Menu/assets/img/Biryani.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">Biryani</h4>
+                    <p class="card-text">You can't make everyone happy, you're not Biryani</p><button class="btn btn-primary OrderButton" type="button" id="Biryani" style="margin-top:30px;">Order</button></div>
+            </div>
+            <div class="card"><img class="card-img-top w-100 d-block" src="static/Menu/assets/img/ButterChicken.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">Butter Chicken</h4>
+                    <p class="card-text">With so much butter you won't stop licking your fingers.<br></p><button class="btn btn-primary OrderButton" type="button" id="ButterChicken" style="margin-top:30px;">Order</button></div>
+            </div>
+            <div class="card"><img class="card-img-top w-100 d-block d-flex align-items-center" src="static/Menu/assets/img/FriedRice.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">Fried Rice</h4>
+                    <p class="card-text">Vegetables and Rice and that too fried? The very best combination you could find.&nbsp;</p><button class="btn btn-primary OrderButton" type="button" id="FriedRice">Button</button></div>
+            </div>
+        </div>
+        <div style="background-color:rgba(255,255,255,0.45);color:rgb(0,0,0);padding-top:1px;margin-top:18px;margin-bottom:-53px;padding-bottom:59px;">
+            <h1 style="margin-top:0px;padding-top:4px;padding-left:68px;color:rgb(0,0,0);">Sea Foods</h1>
+        </div>
+        <div class="card-deck" id="SeaFood" style="margin-left:70px;margin-right:70px;">
+            <div class="card"><img class="card-img-top w-100 d-block" src="static/Menu/assets/img/grilledsalmon.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">Grilled Salmon</h4>
+                    <p class="card-text">Salmon is fried and served to you. I mean the name kinda explains what it is, what more you wanna know?</p><button class="btn btn-primary OrderButton" type="button" id="GrilledSalmon" style="margin-top:30px;">Order</button></div>
+            </div>
+            <div class="card"><img class="card-img-top w-100 d-block" src="static/Menu/assets/img/friedpomfret.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">Fried Pomfret</h4>
+                    <p class="card-text">Same as Fried salmon, its FRIED POMFRET.</p><button class="btn btn-primary OrderButton" type="button" id="FriedPomfret" style="margin-top:79px;">Order</button></div>
+            </div>
+            <div class="card"><img class="card-img-top w-100 d-block d-flex align-items-center" src="static/Menu/assets/img/FishCutlets.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">Fish Cutlets</h4>
+                    <p class="card-text">Cutlets made out of fish. Wow!</p><button class="btn btn-primary OrderButton" type="button" id="FishCutlets" style="margin-top:80px;">Order</button></div>
+            </div>
+        </div>
+        <div style="background-color:rgba(255,255,255,0.45);color:rgb(0,0,0);padding-top:1px;margin-top:18px;margin-bottom:-53px;padding-bottom:59px;">
+            <h1 style="margin-top:0px;padding-top:4px;padding-left:68px;color:rgb(0,0,0);">Dessert</h1>
+        </div>
+        <div class="card-deck" id="Dessert" style="padding-right:70px;padding-left:70px;">
+            <div class="card"><img class="card-img-top w-100 d-block" src="static/Menu/assets/img/ice-cream.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">Ice Cream</h4>
+                    <p class="card-text">Ice creams are everyone's favorite :^)&nbsp;</p><button class="btn btn-primary OrderButton" type="button" id="IceCream" style="margin-top:32px;">Order</button></div>
+            </div>
+            <div class="card"><img class="card-img-top w-100 d-block" src="static/Menu/assets/img/FunnelCake.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">Funnel Cake</h4>
+                    <p class="card-text">No clue what this is, friend told me about it.</p><button class="btn btn-primary OrderButton" type="button" id="FunnelCake" style="margin-top:32px;">Order</button></div>
+            </div>
+            <div class="card"><img class="card-img-top w-100 d-block d-flex align-items-center" src="static/Menu/assets/img/cheesecake.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">Cheese Cake</h4>
+                    <p class="card-text">Cake made out of cheese, that's the best I can explain</p><button class="btn btn-primary OrderButton" type="button" id="CheeseCake" style="margin-top:33px;">Order</button></div>
+            </div>
+        </div>
+    </section>
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Legacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Careers</h3>
+                        <ul>
+                            <li><a href="#">Job openings</a></li>
+                            <li><a href="#">Employee success</a></li>
+                            <li><a href="#">Benefits</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">Company Name © 2017</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="static/Menu/assets/js/jquery.min.js"></script>
+    <script src="static/Menu/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="static/Menu/assets/js/binder.js"></script>
+</body>
+
+</html>

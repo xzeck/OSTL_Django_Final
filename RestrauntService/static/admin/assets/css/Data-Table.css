@@ -1,0 +1,12 @@
+#example {
+  margin-bottom:0;
+}
+
+div {
+  align-items:center;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  align-self:center;
+}
+

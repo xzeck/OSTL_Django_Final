@@ -1,0 +1,28 @@
+#Menu_1 {
+  border-radius:10px;
+  border-color:#f1f1f1;
+}
+
+#Starter {
+  margin-left:70px;
+  margin-right:70px;
+  padding-top:15px;
+}
+
+#NavBar {
+  align-items:end;
+}
+
+.nav-tabs {
+  border-bottom:1px solid #dee2e6;
+  float:right;
+}
+
+.parallax {
+  background-image:url(../../assets/img/cusines.jpg);
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
+  background-position:center;
+}
+
