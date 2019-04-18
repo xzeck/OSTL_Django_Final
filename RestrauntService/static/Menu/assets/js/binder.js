@@ -7,13 +7,15 @@ for(var i =0; i<x.length; i++)
  
   var i = 0;
   var TableNo = Math.floor(Math.random()*10) + 1;
-  var config = {
-    apiKey: "AIzaSyC92HG8cQKzThhjWYinmIsj4LqgUR3dNCw",
-    authDomain: "ostl-e3c98.firebaseapp.com",
-    databaseURL: "https://ostl-e3c98.firebaseio.com",
-    projectId: "ostl-e3c98",
-    storageBucket: "ostl-e3c98.appspot.com",
-    messagingSenderId: "1058048945680"
+
+//Removing configuration for security reasons
+var config = {
+    apiKey: "firebase API key",
+    authDomain: "firebase authDomain",
+    databaseURL: "firebase Realtime DatabaseURL",
+    projectId: "firebase Project ID",
+    storageBucket: "firebase StorageBucket",
+    messagingSenderId: "firebase messageSenderId"
   };
   firebase.initializeApp(config);
 

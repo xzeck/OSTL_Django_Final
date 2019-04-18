@@ -7,12 +7,14 @@ FetchAllButton.addEventListener('click', FetchAll, false);
 
 
 var config = {
-  apiKey: "AIzaSyC92HG8cQKzThhjWYinmIsj4LqgUR3dNCw",
-  authDomain: "ostl-e3c98.firebaseapp.com",
-  databaseURL: "https://ostl-e3c98.firebaseio.com",
-  projectId: "ostl-e3c98",
-  storageBucket: "ostl-e3c98.appspot.com",
-  messagingSenderId: "1058048945680"
+
+	//Removing Confirguration for security reasons
+  apiKey: "Enter your firebase API key here",
+  authDomain: "Enter your firebase AuthDomain",
+  databaseURL: "Enter your firebase realtime database URL",
+  projectId: "Enter your porject ID",
+  storageBucket: "Enter your Storage Bucket",
+  messagingSenderId: "Enter your Message sender ID"
 };
 firebase.initializeApp(config);
 var OrderTable_InitContent  = $("#OrderTable").html();
